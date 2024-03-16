@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>FORM</title>
+</head>
+
+<body>
+    <form action="login.php" method="post">
+        <table border="1">
+            <tr>
+                <td bgcolor="yellow" colspan="2">
+                    <h3>Registration Form</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter name</td>
+                <td><input type="text" name="fullname" /></td>
+            </tr>
+            <tr>
+                <td>Enter password</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td>Enter address</td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Select Game</td>
+                <td>
+                    <p> <input id="hockey" type="checkbox" name="select_game" />
+                        <label for="hockey">Hockey</label>
+                    </p>
+                    <p> <input id="football" type="checkbox" name="select_game" />
+                        <label for="football">Football</label>
+                    </p>
+                    <p> <input id="badminton" type="checkbox" name="select_game" />
+                        <label for="badminton">Badminton</label>
+                    </p>
+                    <p> <input id="cricket" type="checkbox" name="select_game" />
+                        <label for="cricket">Cricket</label>
+                    </p>
+                    <p> <input id="volleyball" type="checkbox" name="select_game" />
+                        <label for="volleyball">Volleyball</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input id="male" type="radio" name="gender" />
+                    <label for="male">male</label>
+                    <input id="female" type="radio" name="gender" />
+                    <label for="female">female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>
+                    <select name="age">
+                          <option value="18">18</option>  
+                          <option value="19">19</option>  
+                          <option value="20">20</option>  
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td>
+                    <input type="file" name="avatar"/>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow" colspan="2">
+                    <input type="button" value="Click me"/>
+                    <input type="reset" value="Reset"/>
+                    <input type="submit" value="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
