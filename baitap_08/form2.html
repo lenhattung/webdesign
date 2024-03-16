@@ -1,83 +1,76 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>FORM</title>
+    <title>Form 1</title>
 </head>
 
 <body>
-    <form action="login.php" method="post">
+    <form action="signin.php" method="post">
         <table border="1">
             <tr>
-                <td bgcolor="yellow" colspan="2">
-                    <h3>Registration Form</h3>
-                </td>
+                <td colspan="2" bgcolor="yellow"><h1>Registration form</h1></td>
             </tr>
             <tr>
-                <td>Enter name</td>
-                <td><input type="text" name="fullname" /></td>
+                <td> Enter name </td>
+                <td> <input type="text" name="name" /></td>
             </tr>
             <tr>
-                <td>Enter password</td>
+                <td> Enter Password </td>
                 <td><input type="password" name="password" /></td>
             </tr>
             <tr>
-                <td>Enter address</td>
+                <td> Enter Address </td>
                 <td><textarea name="address"></textarea></td>
             </tr>
             <tr>
-                <td>Select Game</td>
+                <td> Select Game </td>
                 <td>
-                    <p> <input id="hockey" type="checkbox" name="select_game" />
-                        <label for="hockey">Hockey</label>
-                    </p>
-                    <p> <input id="football" type="checkbox" name="select_game" />
-                        <label for="football">Football</label>
-                    </p>
-                    <p> <input id="badminton" type="checkbox" name="select_game" />
-                        <label for="badminton">Badminton</label>
-                    </p>
-                    <p> <input id="cricket" type="checkbox" name="select_game" />
-                        <label for="cricket">Cricket</label>
-                    </p>
-                    <p> <input id="volleyball" type="checkbox" name="select_game" />
-                        <label for="volleyball">Volleyball</label>
-                    </p>
+                    <input type="checkbox" id="hockey" name="game"/>
+                    <label for="hockey">Hockey</label> <br/>
+                    <input type="checkbox" id="football" name="game"/>
+                    <label for="football">Football</label> <br/>
+                    <input type="checkbox" id="badminton" name="game"/>
+                    <label for="badminton">Badminton</label> <br/>
+                    <input type="checkbox" id="cricket" name="game"/>
+                    <label for="cricket">Cricket</label> <br/>
+                    <input type="checkbox" id="volleyball" name="game"/>
+                    <label for="volleyball">Volleyball</label> <br/>
                 </td>
             </tr>
             <tr>
-                <td>Gender</td>
+                <td> Gender </td>
                 <td>
-                    <input id="male" type="radio" name="gender" />
-                    <label for="male">male</label>
-                    <input id="female" type="radio" name="gender" />
-                    <label for="female">female</label>
+                    <input type="radio" id="male" name="gender"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"/>
+                    <label for="female">Fmale</label>
                 </td>
             </tr>
             <tr>
-                <td>Age</td>
+                <td> Age </td>
                 <td>
                     <select name="age">
-                          <option value="18">18</option>  
-                          <option value="19">19</option>  
-                          <option value="20">20</option>  
+                        <option value="18">18</option>
+                        <option value="18">19</option>
+                        <option value="18">20</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td>Avatar</td>
+                <td> Avatar </td>
                 <td>
                     <input type="file" name="avatar"/>
                 </td>
             </tr>
             <tr>
-                <td bgcolor="yellow" colspan="2">
-                    <input type="button" value="Click me"/>
-                    <input type="reset" value="Reset"/>
-                    <input type="submit" value="submit"/>
+                <td colspan="2">
+                    <input type="button" value="Click me" />
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit" />
                 </td>
             </tr>
         </table>
     </form>
 </body>
-
 </html>
