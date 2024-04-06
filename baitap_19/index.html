@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập về LIST, TABLE, FORM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            color: #666;
+            background-color: #f8f8f8;
+        }
+
+        li {
+            list-style-type: square;
+            line-height: 1.6em;
+        }
+
+        table {
+            border-spacing: 0px;
+        }
+
+        th,
+        td {
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0px;
+            font-size: 90%;
+            margin: 0px;
+            text-align: left;
+            background-color: #e0e9f0;
+            border-top: 1px solid #f1f8fe;
+            border-bottom: 1px solid #cbd2d8;
+            border-right: 1px solid #cbd2d8;
+        }
+
+        tr.head th {
+            color: #fff;
+            background-color: #90b4d6;
+            border-bottom: 2px solid #547ca0;
+            border-right: 1px solid #749abe;
+            border-top: 1px solid #90b4d6;
+            text-align: center;
+            text-shadow: -1px -1px 1px #666;
+            letter-spacing: 0.15em;
+        }
+
+        td {
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        tr.even td,
+        tr.even th {
+            background-color: #e8eff5;
+        }
+
+        tr.head th:first-child {
+            -webkit-border-top-left: 5px;
+            -moz-border-radius-topleft: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        tr.head th:last-child {
+            -webkit-border-top-right: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        fieldset {
+            width: 310px;
+            margin-top: 20px;
+            border: 1px solid #d6d6d6;
+            background-color: #ffffff;
+            line-height: 1.6em;
+        }
+
+        legend {
+            font-style: italic;
+            color: #666666;
+        }
+
+        input[type="text"] {
+            width: 120px;
+            border: 1px solid #d6d6d6;
+            padding: 2px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="text"]:hover {
+            border: 1px solid #d0e2f0;
+            border: 1px solid #999;
+        }
+
+        input[type="submit"] {
+            border: 1px solid #006633;
+            background-color: #009966;
+            color: #FFFFFF;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+
+        }
+        input[type="submit"]:hover {
+            border: 1px solid #006633;
+            background-color: #00CC33;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        .title{
+            float: left;
+            width: 160px;
+            clear: left;
+        }
+        .submit{
+            width: 310px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Các Buổi Chiếu Phim Miễn Phí</h1>
+    <p>Chúng tôi sẽ tổ chức một số buổi chiếu phim miễn phí cho cộng đồng.</p>
+    <p>Vui lòng lưu ý rằng các sự kiện sau đây miễn phí cho mọi người tham dự:</p>
+    <ul>
+        <li>Biệt Đội Siêu Anh Hùng</li>
+        <li>Cô Ba Sài Gòn</li>
+        <li>Em Chưa 18</li>
+        <li>Tiệc trăng máu</li>
+    </ul>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <th>Biệt Đội Siêu Anh Hùng</th>
+            <td>Thứ Bảy, 4 Tháng Hai 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 3 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 17 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even">
+            <th>Cô Ba Sài Gòn</th>
+            <td>Thứ Bảy, 7 Tháng Tư 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 5 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 19 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+        </tr>
+        <tr>
+            <th>Em Chưa 18</th>
+            <td>Thứ Bảy, 9 Tháng Sáu 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 7 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 21 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even">
+            <th>Tiệc Trăng Máu</th>
+            <td>Thứ Bảy, 4 Tháng Tám 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 8 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 15 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+        </tr>
+    </table>
+    <form action="http://www.example.com/form.php" method="get">
+        <fieldset>
+            <legend>Đăng ký sự quan tâm của bạn</legend>
+            <p><label class="title" for="name">Tên của bạn:</label>
+                <input type="text" name="name" id="name"><br />
+                <label class="title" for="email">Email của bạn:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p><label for="location" class="title">Rạp chiếu phim gần nhất của bạn:</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+            <span class="title">Bạn có muốn nhận thông tin từ chúng tôi không?</span>
+            <label><input type="radio" name="member" value="yes" /> Có</label>
+            <label><input type="radio" name="member" value="no" /> Không</label></p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Đăng ký" /></div>
+    </form>
+</body>
+
+</html>
