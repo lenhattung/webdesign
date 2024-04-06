@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Sinh Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .table1 {
+            width: 100%;
+            border-collapse: collapse;
+            /* Gộp các đường viền kề nhau thành một đường viền */
+            border-spacing: 0;
+            /* Đặt khoảng cách giữa các ô bằng 0 */
+        }
+
+        .table2 {
+            width: 100%;
+            /* border-collapse: collapse; */
+            /* Gộp các đường viền kề nhau thành một đường viền */
+            border-spacing: 5px 10px;
+            /* Đặt khoảng cách giữa các ô bằng 0 */
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #c3e6e5;
+        }
+
+        .empty {
+            empty-cells: hide;
+            /* Ẩn các ô trống */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh Sách Sinh Viên</h1>
+    <table class="table1">
+        <thead>
+            <tr>
+                <th>Mã Sinh Viên</th>
+                <th>Họ và Tên</th>
+                <th>Ngày Sinh</th>
+                <th>Điểm TB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>10/05/1998</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>SV002</td>
+                <td>Trần Thị B</td>
+                <td>15/07/1997</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>SV003</td>
+                <td>Lê Văn C</td>
+                <td>20/12/1999</td>
+                <td></td> <!-- Ô trống -->
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Danh Sách Sinh Viên</h1>
+    <table class="table2">
+        <thead>
+            <tr>
+                <th>Mã Sinh Viên</th>
+                <th>Họ và Tên</th>
+                <th>Ngày Sinh</th>
+                <th>Điểm TB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>10/05/1998</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>SV002</td>
+                <td>Trần Thị B</td>
+                <td>15/07/1997</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>SV003</td>
+                <td>Lê Văn C</td>
+                <td>20/12/1999</td>
+                <td></td> <!-- Ô trống -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
