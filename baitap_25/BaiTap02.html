@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vi du ve JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script lang="JavaScript">
+            function xuly(){
+                ip = document.getElementById("fullname");
+                div = document.getElementById("content");
+
+                div.innerText = "Xin chào: "+ ip.value;
+            }
+        </script>
+    </head>
+    <body>
+        Nhập vào tên của bạn: <input type="text" id="fullname" onkeyup="xuly()" />
+        <div id="content">Xin chào: </div>
+    </body>
+</html>
